@@ -101,9 +101,9 @@ var sqlMap = {
         select_stu_first_regular: "select regularchoice.stuNum,stuName from regularchoice,student where idFirst=? and statusFirst='untreat' and stuGrade=? and regularchoice.stuNum=student.stuNum",
         select_stu_second_regular: "select regularchoice.stuNum,stuName from regularchoice,student where idSecond=? and idThird is NULL and statusFirst='refuse' and stuGrade=?  and regularchoice.stuNum=student.stuNum",
         select_stu_third_regular: "select regularchoice.stuNum,stuName from regularchoice,student where idThird=? and statusThird ='untreat' and stuGrade=?  and regularchoice.stuNum=student.stuNum",
-        select_stu_first_graduate: "select graduatechoice.stuNum,stuName, from graduatechoice,student where idFirst=? and statusFirst='untreat' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
-        select_stu_second_graduate: "select graduatechoice.stuNum,stuName, from graduatechoice,student where idSecond=? and idThird is NULL and statusFirst='refuse' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
-        select_stu_third_graduate: "select graduatechoice.stuNum,stuName, from graduatechoice,student where idThird=? and statusThird='untreat' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
+        select_stu_first_graduate: "select graduatechoice.stuNum,stuName from graduatechoice,student where idFirst=? and statusFirst='untreat' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
+        select_stu_second_graduate: "select graduatechoice.stuNum,stuName from graduatechoice,student where idSecond=? and idThird is NULL and statusFirst='refuse' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
+        select_stu_third_graduate: "select graduatechoice.stuNum,stuName from graduatechoice,student where idThird=? and statusThird='untreat' and stuGrade=? and graduatechoice.stuNum=student.stuNum",
 
         //拒收或者接收
         receive_first_regular: "update regularchoice set statusFirst='accept' where  stuNum=?",
